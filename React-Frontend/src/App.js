@@ -6,6 +6,7 @@ import Login from "./components/login";
 import about from "./components/about";
 import interact from "./components/interact";
 import games from "./components/games";
+
 import profile from "./components/profile";
 import sport1 from "./components/sport1";
 import sport2 from "./components/sport2";
@@ -18,6 +19,17 @@ import sport8 from "./components/sport8";
 import {Route,BrowserRouter as Router,Switch} from "react-router-dom";
 
 function App() {
+
+import {Route,BrowserRouter as Router,Switch} from "react-router-dom";
+import book from './components/book'
+
+function App() {
+  const [token, setToken] = useState('');
+
+  const userLogin = (tok) => {
+    setToken(tok);
+  }
+
   return (
     <div className="App">
       
@@ -41,6 +53,9 @@ function App() {
             <Route exact path={process.env.PUBLIC_URL +"/sport6"} component={sport6}/>
             <Route exact path={process.env.PUBLIC_URL +"/sport7"} component={sport7}/>
             <Route exact path={process.env.PUBLIC_URL +"/sport8"} component={sport8}/>
+
+            <Route path={process.env.PUBLIC_URL +"/book"} component={book}/>
+           
           </Switch>
         </Router> 
     </div>
