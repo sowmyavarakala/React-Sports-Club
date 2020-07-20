@@ -36,12 +36,13 @@ class login extends Component{
                                       <small>Remember Me</small>
                                     </label>
                                     <br />
-                                    <label style={{float:"right"}}>
-                                      <a href="{% url 'password_reset' %}">Forgot password?</a>
+                                    <label style={{float:"right",color:'blue'}}>
+                                    <li className="quick-view"><a href={process.env.PUBLIC_URL +"/forpass"} style={{color:'black'}}>Forgot password?</a></li>
                                     </label>
                                     <br />
                                     <br />
-                                    <button type="submit" className="btn btn-login ">Login</button>
+                                    
+                                    <button type="submit"  style={{padding:'10px 40px',backgroundColor:'blue',borderRadius:'20px'}}>Login</button>
                                   </div>
                                 </form>
                               </div>
