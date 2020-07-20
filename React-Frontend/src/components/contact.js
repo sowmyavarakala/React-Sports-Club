@@ -6,6 +6,7 @@ import Header from './header';
 class contact extends Component{
     render() {
         return(
+
             <div style={{backgroundColor:"white"}}>
               <Header/>
            
@@ -13,6 +14,7 @@ class contact extends Component{
               <h1 style={{marginTop:'40px'}}>Contact us</h1>
               <div className="container2" style={{margin:'100px'}}>
                 <div className="row" style={{marginTop:'200px'}}>
+
                   <div className="col-lg-7">
                     <form action="#">
                       <div className="form-group">

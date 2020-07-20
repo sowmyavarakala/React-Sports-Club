@@ -9,6 +9,7 @@ class sport3 extends Component
 {
     render() 
     {
+
       return (
 <div style={{marginTop:'300px',zIndex:'10'}}>
           <Header/>
@@ -64,6 +65,7 @@ Play involves no hidden information. Each player begins with 16 pieces: one king
         </div>
 
       );
+
     }
 }
 

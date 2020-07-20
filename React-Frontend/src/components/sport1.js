@@ -9,6 +9,7 @@ class sport1 extends Component
 {
     render() 
     {
+
       return (
         <div style={{marginTop:'300px',zIndex:'10'}}>
           <Header/>
@@ -65,7 +66,7 @@ The game developed in British India from the earlier game of battledore and shut
         </div>
         </div>
       );
-    }
+}
 }
 
 export default sport1;
